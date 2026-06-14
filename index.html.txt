@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi Botoșani SFX - Comenzi Taxi 24/7</title>
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    color:#ffd700;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffd700;
+    color:black;
+    padding:15px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    margin:5px;
+    transition:0.2s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    opacity:0.9;
+}
+
+.btn:active{
+    transform:scale(0.95);
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.btn-whatsapp:hover{
+    background:#1ebe5d;
+
+}
+
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:38px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.stats{
+    background:#111;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.stat h2{
+    color:#ffd700;
+    font-size:40px;
+}
+
+.contact{
+    background:white;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-box p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">TAXI BOTOȘANI SFX</div>
+
+<ul>
+<li><a href="#despre">Despre</a></li>
+<li><a href="#servicii">Servicii</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>TAXI BOTOȘANI SFX</h1>
+<p>Rapid • Sigur • Disponibil 24/7</p>
+
+<a class="btn" href="tel:0746057060">
+Sună acum
+</a>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/40746057060" target="_blank">
+WhatsApp
+</a>
+
+</div>
+</section>
+
+
+
+<section id="despre">
+<div class="container">
+<h2 class="title">Despre Noi</h2>
+
+<p style="text-align:center;font-size:20px;line-height:1.8;">
+TAXI Botoșani SFX oferă servicii de transport persoane
+în municipiul Botoșani și împrejurimi.
+Punem accent pe punctualitate, siguranță și confort.
+Șoferii noștri sunt profesioniști, iar mașinile sunt
+întreținute și verificate periodic.
+</p>
+</div>
+</section>
+
+<section id="servicii">
+<div class="container">
+
+<h2 class="title">Serviciile Noastre</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>🚕 Taxi Urban</h3>
+<p>Transport rapid în orice zonă din municipiul Botoșani.</p>
+</div>
+
+<div class="card">
+<h3>✈️ Transfer Aeroport</h3>
+<p>Curse către aeroporturi și gări la cerere.</p>
+</div>
+
+<div class="card">
+<h3>🌙 Disponibil Non-Stop</h3>
+<p>Serviciu activ 24 de ore din 24, 7 zile din 7.</p>
+</div>
+
+<div class="card">
+<h3>💼 Transport Business</h3>
+<p>Servicii dedicate firmelor și clienților corporate.</p>
+</div>
+
+<div class="card">
+<h3>📦 Livrări Rapide</h3>
+<p>Transport documente și colete în regim urgent.</p>
+</div>
+
+<div class="card">
+<h3>🛣️ Curse în Afara Orașului</h3>
+<p>Deplasări în județ și în alte localități din România.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="stats">
+<div class="container">
+
+<h2 class="title">De Ce Noi?</h2>
+
+<div class="stats-grid">
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Disponibilitate</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Profesionalism</p>
+</div>
+
+<div class="stat">
+<h2>8</h2>
+<p>Ani experiență</p>
+</div>
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Clienți mulțumiți</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact-box">
+
+<p>📞 Telefon: 0746 057 060 </p>
+
+<p>📍 Botoșani, România</p>
+
+<p>📧 <a href="mailto:taxi.botosani.sfx@gmail.com">
+taxi.botosani.sfx@gmail.com
+</a></p>
+
+
+<a class="btn" href="tel:0746057060">
+Comandă Taxi
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 TAXI BOTOȘANI SFX. Toate drepturile rezervate.
+</footer>
+
+</body>
+</html>
