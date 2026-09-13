@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taxi Botoșani SFX - Comenzi Taxi 24/7</title>
-
+<title>Taxi Botoșani SFX / Transfer Aeroport - Comenzi Taxi 24/7</title>
 
 <style>
 *{
@@ -52,10 +51,12 @@ nav a{
 
 .hero{
     height:80vh;
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
+    background:
+        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+        url('Taxi Botosani SFX.jpeg');
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -64,8 +65,9 @@ nav a{
 }
 
 .hero-content h1{
-    font-size:60px;
+    font-size:56px;
     margin-bottom:20px;
+    line-height:1.2;
 }
 
 .hero-content p{
@@ -101,7 +103,6 @@ nav a{
 
 .btn-whatsapp:hover{
     background:#1ebe5d;
-
 }
 
 section{
@@ -175,6 +176,15 @@ footer{
     text-align:center;
     padding:25px;
 }
+
+footer a{
+    color:#ffd700;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
 </style>
 </head>
 
@@ -182,7 +192,7 @@ footer{
 
 <header>
 <nav>
-<div class="logo">TAXI BOTOȘANI SFX</div>
+<div class="logo">TAXI BOTOȘANI SFX / TRANSFER AEROPORT</div>
 
 <ul>
 <li><a href="#despre">Despre</a></li>
@@ -194,7 +204,9 @@ footer{
 
 <section class="hero">
 <div class="hero-content">
-<h1>TAXI BOTOȘANI SFX</h1>
+
+<h1>TAXI BOTOȘANI SFX / TRANSFER AEROPORT</h1>
+
 <p>Rapid • Sigur • Disponibil 24/7</p>
 
 <a class="btn" href="tel:0746057060">
@@ -209,19 +221,18 @@ WhatsApp
 </div>
 </section>
 
-
-
 <section id="despre">
 <div class="container">
+
 <h2 class="title">Despre Noi</h2>
 
 <p style="text-align:center;font-size:20px;line-height:1.8;">
-TAXI Botoșani SFX oferă servicii de transport persoane
-în municipiul Botoșani și împrejurimi.
-Punem accent pe punctualitate, siguranță și confort.
-Șoferii noștri sunt profesioniști, iar mașinile sunt
-întreținute și verificate periodic.
+Taxi Botoșani SFX / Transfer Aeroport oferă servicii de transport persoane
+în municipiul Botoșani și împrejurimi, precum și transferuri către aeroporturi
+din România. Punem accent pe punctualitate, siguranță și confort.
+Șoferii noștri sunt profesioniști, iar mașinile sunt întreținute și verificate periodic.
 </p>
+
 </div>
 </section>
 
@@ -239,7 +250,7 @@ Punem accent pe punctualitate, siguranță și confort.
 
 <div class="card">
 <h3>✈️ Transfer Aeroport</h3>
-<p>Curse către aeroporturi și gări la cerere.</p>
+<p>Curse către toate aeroporturile , cu programare non-stop.</p>
 </div>
 
 <div class="card">
@@ -300,21 +311,17 @@ Punem accent pe punctualitate, siguranță și confort.
 </section>
 
 <section id="contact" class="contact">
-
 <div class="container">
 
 <h2 class="title">Contact</h2>
 
 <div class="contact-box">
 
-<p>📞 Telefon: 0746 057 060 </p>
+<p>📞 Telefon: <a href="tel:0746057060">0746 057 060</a></p>
 
 <p>📍 Botoșani, România</p>
 
-<p>📧 <a href="mailto:taxi.botosani.sfx@gmail.com">
-taxi.botosani.sfx@gmail.com
-</a></p>
-
+<p>📧 <a href="mailto:taxi.botosani.sfx@gmail.com">taxi.botosani.sfx@gmail.com</a></p>
 
 <a class="btn" href="tel:0746057060">
 Comandă Taxi
@@ -323,11 +330,23 @@ Comandă Taxi
 </div>
 
 </div>
-
 </section>
 
 <footer>
-© 2026 TAXI BOTOȘANI SFX. Toate drepturile rezervate.
+
+<p><strong>© 2026 TAXI BOTOȘANI SFX / TRANSFER AEROPORT. Toate drepturile rezervate.</strong></p>
+
+<p style="margin-top:10px;font-size:14px;">
+Acest site oferă informații și posibilitatea de a contacta serviciul Taxi Botoșani SFX / Transfer Aeroport.
+</p>
+
+<p style="margin-top:12px;font-size:14px;">
+Protecția Consumatorilor:
+<a href="https://anpc.ro/" target="_blank">ANPC</a> |
+<a href="https://anpc.ro/ce-este-sal/" target="_blank">SAL</a> |
+<a href="https://ec.europa.eu/consumers/odr/" target="_blank">SOL (ODR)</a>
+</p>
+
 </footer>
 
 </body>
