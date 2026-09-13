@@ -4,14 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Taxi SFX Botoșani.Aeroport - Comenzi Taxi 24/7</title>
+<title>Taxi SFX Botoșani.Aeroport | Transfer Aeroport 24/7</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -20,79 +25,88 @@ body{
 }
 
 header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
     background:#111;
-    color:white;
-    padding:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
 }
 
 nav{
+    max-width:1200px;
+    margin:auto;
+    padding:18px 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    max-width:1200px;
-    margin:auto;
     flex-wrap:wrap;
-    gap:15px;
 }
 
 .logo{
-    color:#ffd700;
+    color:#FFD700;
     font-size:28px;
     font-weight:bold;
 }
 
 nav ul{
-    list-style:none;
     display:flex;
+    list-style:none;
     gap:20px;
 }
 
-nav a{
+nav ul li a{
     color:white;
     text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
 }
 
 .hero{
-    height:80vh;
+    height:100vh;
     background:
-        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-        url("hero.jpg");
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("Taxi1.jpeg");
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     color:white;
+    padding:20px;
 }
 
-.hero-content h1{
-    font-size:56px;
+.hero h1{
+    font-size:60px;
     margin-bottom:20px;
-    line-height:1.2;
 }
 
-.hero-content p{
+.hero p{
     font-size:22px;
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 .btn{
     display:inline-block;
-    background:#ffd700;
-    color:black;
     padding:15px 30px;
+    border-radius:8px;
     text-decoration:none;
     font-weight:bold;
-    border-radius:5px;
-    margin:5px;
-    transition:.2s;
+    margin:8px;
+    transition:.25s;
 }
 
-.btn:hover{
+.btn-call{
+    background:#FFD700;
+    color:black;
+}
+
+.btn-call:hover{
     transform:scale(1.05);
-    opacity:.9;
 }
 
 .btn-whatsapp{
@@ -100,8 +114,12 @@ nav a{
     color:white;
 }
 
+.btn-whatsapp:hover{
+    transform:scale(1.05);
+}
+
 section{
-    padding:70px 20px;
+    padding:90px 20px;
 }
 
 .container{
@@ -111,21 +129,32 @@ section{
 
 .title{
     text-align:center;
-    margin-bottom:50px;
-    font-size:38px;
+    font-size:40px;
+    margin-bottom:45px;
+}
+
+.about{
+    text-align:center;
+    font-size:20px;
+    line-height:1.8;
 }
 
 .services{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
 }
 
 .card h3{
@@ -145,48 +174,48 @@ section{
 }
 
 .stat h2{
-    color:#ffd700;
-    font-size:40px;
+    font-size:42px;
+    color:#FFD700;
 }
 
 .contact{
-    background:white;
-}
-
-.contact-box{
-    max-width:700px;
-    margin:auto;
     text-align:center;
 }
 
-.contact-box p{
-    margin:15px 0;
+.contact p{
     font-size:20px;
+    margin:15px 0;
 }
 
 footer{
     background:#111;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:30px 20px;
 }
 
 footer a{
-    color:#ffd700;
+    color:#FFD700;
     text-decoration:none;
 }
 
 @media(max-width:768px){
 
-.hero-content h1{
+.hero h1{
 font-size:36px;
 }
 
-.hero-content p{
+.hero p{
 font-size:18px;
 }
 
 nav{
+justify-content:center;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
 justify-content:center;
 }
 
@@ -194,11 +223,8 @@ justify-content:center;
 text-align:center;
 }
 
-nav ul{
-justify-content:center;
-flex-wrap:wrap;
 }
-}
+
 </style>
 
 </head>
@@ -209,7 +235,7 @@ flex-wrap:wrap;
 <nav>
 
 <div class="logo">
-TAXI SFX BOTOȘANI.AEROPORT
+Taxi SFX Botoșani.Aeroport
 </div>
 
 <ul>
@@ -224,20 +250,18 @@ TAXI SFX BOTOȘANI.AEROPORT
 
 <section class="hero">
 
-<div class="hero-content">
+<div>
 
-<h1>TAXI SFX BOTOȘANI.AEROPORT</h1>
+<h1>Taxi SFX Botoșani.Aeroport</h1>
 
 <p>Rapid • Sigur • Disponibil 24/7</p>
 
-<a class="btn" href="tel:0746057060">
-Sună acum
+<a href="tel:0746057060" class="btn btn-call">
+📞 Sună acum
 </a>
 
-<a class="btn btn-whatsapp"
-href="https://wa.me/40746057060"
-target="_blank">
-WhatsApp
+<a href="https://wa.me/40746057060" target="_blank" class="btn btn-whatsapp">
+💬 WhatsApp
 </a>
 
 </div>
@@ -248,18 +272,13 @@ WhatsApp
 
 <div class="container">
 
-<h2 class="title">
-Despre Noi
-</h2>
+<h2 class="title">Despre Noi</h2>
 
-<p style="text-align:center;font-size:20px;line-height:1.8;">
+<p class="about">
 
-Taxi SFX Botoșani.Aeroport oferă servicii de transport persoane în municipiul
-Botoșani și împrejurimi, precum și transferuri către aeroporturi din România.
+Taxi SFX Botoșani.Aeroport oferă servicii profesionale de transport persoane în municipiul Botoșani și împrejurimi, precum și transferuri către aeroporturi din România.
 
-Punem accent pe punctualitate, siguranță și confort.
-
-Șoferii noștri sunt profesioniști, iar mașinile sunt întreținute și verificate periodic.
+Punem accent pe punctualitate, confort și siguranță, oferind servicii disponibile 24 de ore din 24.
 
 </p>
 
@@ -271,25 +290,23 @@ Punem accent pe punctualitate, siguranță și confort.
 
 <div class="container">
 
-<h2 class="title">
-Serviciile Noastre
-</h2>
+<h2 class="title">Serviciile Noastre</h2>
 
 <div class="services">
 
 <div class="card">
 <h3>🚕 Taxi Urban</h3>
-<p>Transport rapid în orice zonă din municipiul Botoșani.</p>
+<p>Transport rapid în orice zonă din Botoșani.</p>
 </div>
 
 <div class="card">
 <h3>✈️ Transfer Aeroport</h3>
-<p>Curse către toate aeroporturile, cu programare non-stop.</p>
+<p>Curse către Aeroportul Iași și alte aeroporturi din România.</p>
 </div>
 
 <div class="card">
 <h3>🌙 Disponibil Non-Stop</h3>
-<p>Serviciu activ 24 de ore din 24, 7 zile din 7.</p>
+<p>Serviciu activ 24/7.</p>
 </div>
 
 <div class="card">
@@ -299,12 +316,12 @@ Serviciile Noastre
 
 <div class="card">
 <h3>📦 Livrări Rapide</h3>
-<p>Transport documente și colete în regim urgent.</p>
+<p>Transport documente și colete urgente.</p>
 </div>
 
 <div class="card">
 <h3>🛣️ Curse în Afara Orașului</h3>
-<p>Deplasări în județ și în alte localități din România.</p>
+<p>Transport în județ și oriunde în România.</p>
 </div>
 
 </div>
@@ -317,9 +334,7 @@ Serviciile Noastre
 
 <div class="container">
 
-<h2 class="title">
-De Ce Noi?
-</h2>
+<h2 class="title">De Ce Noi?</h2>
 
 <div class="stats-grid">
 
@@ -334,7 +349,7 @@ De Ce Noi?
 </div>
 
 <div class="stat">
-<h2>8</h2>
+<h2>8+</h2>
 <p>Ani experiență</p>
 </div>
 
@@ -349,33 +364,25 @@ De Ce Noi?
 
 </section>
 
-<section id="contact" class="contact">
+<section id="contact">
 
-<div class="container">
+<div class="container contact">
 
-<h2 class="title">
-Contact
-</h2>
+<h2 class="title">Contact</h2>
 
-<div class="contact-box">
-
-<p>📞 Telefon:
-<a href="tel:0746057060">0746 057 060</a>
-</p>
+<p>📞 <a href="tel:0746057060">0746 057 060</a></p>
 
 <p>📍 Botoșani, România</p>
 
-<p>📧
-<a href="mailto:taxi.botosani.sfx@gmail.com">
-taxi.botosani.sfx@gmail.com
-</a>
-</p>
+<p>📧 <a href="mailto:taxi.botosani.sfx@gmail.com">taxi.botosani.sfx@gmail.com</a></p>
 
-<a class="btn" href="tel:0746057060">
+<a href="tel:0746057060" class="btn btn-call">
 Comandă Taxi
 </a>
 
-</div>
+<a href="https://wa.me/40746057060" target="_blank" class="btn btn-whatsapp">
+WhatsApp
+</a>
 
 </div>
 
@@ -383,16 +390,13 @@ Comandă Taxi
 
 <footer>
 
-<p><strong>
-© 2026 TAXI SFX BOTOȘANI.AEROPORT. Toate drepturile rezervate.
-</strong></p>
+<p><strong>© 2026 Taxi SFX Botoșani.Aeroport. Toate drepturile rezervate.</strong></p>
 
-<p style="margin-top:10px;font-size:14px;">
+<p style="margin-top:10px;">
 Acest site oferă informații și posibilitatea de a contacta serviciul Taxi SFX Botoșani.Aeroport.
 </p>
 
-<p style="margin-top:12px;font-size:14px;">
-Protecția Consumatorilor:
+<p style="margin-top:15px;">
 <a href="https://anpc.ro/" target="_blank">ANPC</a> |
 <a href="https://anpc.ro/ce-este-sal/" target="_blank">SAL</a> |
 <a href="https://ec.europa.eu/consumers/odr/" target="_blank">SOL (ODR)</a>
